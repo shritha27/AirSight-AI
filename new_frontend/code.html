@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#ffb4a3", "surface-container-highest": "#d9e3f1", "tertiary-container": "#5f2315", "secondary-fixed": "#c1e8ff", "on-primary": "#ffffff", "primary-fixed": "#d1e5fc", "on-tertiary-fixed": "#3b0901", "surface-tint": "#4d6074", "outline": "#74777d", "surface-container-low": "#edf4ff", "on-error": "#ffffff", "surface-dim": "#d1dbe8", "secondary-container": "#bde5fd", "on-secondary-fixed-variant": "#234b5e", "surface-variant": "#d9e3f1", "secondary-fixed-dim": "#a4cce3", "inverse-primary": "#b5c9df", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "on-background": "#121d26", "on-primary-container": "#8ea1b7", "tertiary-fixed": "#ffdad2", "on-tertiary-fixed-variant": "#743323", "tertiary": "#430e03", "primary-container": "#25384a", "surface-container": "#e5effc", "inverse-surface": "#27313b", "surface": "#f7f9ff", "on-surface-variant": "#43474c", "on-error-container": "#93000a", "surface-container-high": "#dfe9f6", "surface-bright": "#f7f9ff", "background": "#f7f9ff", "on-secondary": "#ffffff", "on-primary-fixed": "#081d2e", "on-surface": "#121d26", "surface-container-lowest": "#ffffff", "on-secondary-container": "#40677b", "error": "#ba1a1a", "on-tertiary-container": "#df8873", "secondary": "#3c6377", "primary": "#0e2334", "inverse-on-surface": "#e7f2ff", "on-secondary-fixed": "#001e2b", "on-primary-fixed-variant": "#36495b", "primary-fixed-dim": "#b5c9df", "outline-variant": "#c4c7cd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.25rem", "space-xl": "2.25rem", "space-xs": "0.25rem", "margin": "1.5rem", "gutter-desktop": "1.75rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "gutter-mobile": "0.75rem", "margin-desktop": "3rem" }, "fontFamily": { "label-lg": ["Hanken Grotesk"], "body-sm": ["Hanken Grotesk"], "metric-xl": ["Space Grotesk"], "label-sm": ["Hanken Grotesk"], "headline-md": ["Space Grotesk"], "display-lg": ["Space Grotesk"], "headline-sm": ["Space Grotesk"], "label-md": ["Hanken Grotesk"], "display-lg-mobile": ["Space Grotesk"], "body-lg": ["Hanken Grotesk"], "metric-xl-mobile": ["Space Grotesk"], "metric-lg": ["Space Grotesk"], "body-md": ["Hanken Grotesk"], "headline-lg": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"] }, "fontSize": { "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "metric-xl": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "metric-xl-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "metric-lg": ["28px", { "lineHeight": "32px", "fontWeight": "500" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-margin-mobile md:px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-headline-sm text-secondary-fixed">airwave</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-semibold">AirSight AI</span><span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider font-semibold">v2.1</span></div><span class="hidden lg:inline text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase">Atmospheric Telemetry &amp; Intelligence</span></div></div><div class="hidden xl:flex items-center gap-space-xs pl-space-md"><div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase font-semibold tracking-wider">Atmospheric Stream: Active</span></div><div class="hidden 2xl:flex items-center gap-1 px-2 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-sm text-secondary">sensors</span><span>1,428 Stations Syncing</span></div></div></div><nav class="hidden lg:flex items-center gap-space-xs xl:gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm"><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="overview" href="#">Overview</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="predict-aqi" href="#">Predict AQI</a><a aria-current="page" class="px-space-sm py-2 transition-colors bg-primary-container text-on-primary font-semibold rounded-lg shadow-sm" data-path="analytics" href="#">Analytics</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="data-explorer" href="#">Data Explorer</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="model-insights" href="#">Model Insights</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-lowest shadow-[0_2px_8px_-2px_rgba(37,56,74,0.04)]"><div class="flex flex-col text-right"><div class="flex items-center justify-end gap-1"><span class="material-symbols-outlined text-label-md text-secondary">location_on</span><span class="font-label-md text-label-md font-semibold text-primary truncate max-w-[170px]">Station Alpine Ridge-04</span></div><div class="flex items-center justify-end gap-1.5 font-label-sm text-label-sm text-on-surface-variant"><span>Alt: 2,180m</span><span>•</span><span class="font-medium text-primary">UTC 14:32:08</span></div></div><button aria-label="Change station" class="p-1 text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">unfold_more</span></button></div><div class="flex items-center gap-space-sm pl-space-xs"><button aria-label="Station alerts" class="relative p-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface"></span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm ring-1 ring-surface-variant" src="https://lh3.googleusercontent.com/aida/AEtjO1UnNwVT43NiiDiB5pWsjbNE8qstm7KvNY6b5eNkciQJ27x7iVFadx41zKkVsohr43AjrS4JK_nTH_DwgXoovQDkO5jIpTQRpyX7K2Y_vgoLi3bTOeO7UsrW4QKWIGC2SvtrNvTA8hrCkur14M7Lw6k-J1qKVu3fNhX6oOIjOjKe0SPm9wj-vVkmb5HwOqTydW26KG0SCsLHwGKliqP9hLM0ZLXmTEkDD2DJ-QJ1lx2Dhc6KAIyoXY1G3W8"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Contextual Ambient Layer (Internal Subtle Diffused Spheres) -->
+<div class="relative w-full overflow-hidden px-margin-mobile md:px-margin lg:px-margin-desktop py-space-md">
+<!-- Top Analytical Workspace Bar: Station Telemetry Identity & Primary Export Controls -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold">Observational Suite</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Station: Alpine Ridge-04 (Grid Cell #89-C)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Model Inversion: Validated</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-medium">Tropospheric Analytics &amp; Cross-Correlation Workspace</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">Multi-horizon spatial telemetry evaluating ambient micro-particulate dynamics, photochemical oxidants, and synoptic meteorology over calibrated monitoring baselines.</p>
+</div>
+<!-- Action Cluster -->
+<div class="flex flex-wrap items-center gap-space-xs shrink-0">
+<button class="group px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all shadow-sm flex items-center gap-1.5 font-label-md text-label-md" id="btn-export-csv">
+<span class="material-symbols-outlined text-base text-secondary group-hover:scale-110 transition-transform">download</span>
+<span>Download Cleaned CSV</span>
+</button>
+<button class="group px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all shadow-sm flex items-center gap-1.5 font-label-md text-label-md" id="btn-export-svg">
+<span class="material-symbols-outlined text-base text-secondary group-hover:scale-110 transition-transform">photo_camera</span>
+<span>Export SVG Vector Pack</span>
+</button>
+<div class="h-6 w-px bg-surface-container-highest mx-1 hidden sm:block"></div>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all shadow-md flex items-center gap-2 font-label-md text-label-md" id="btn-recalibrate">
+<span class="material-symbols-outlined text-base text-secondary-fixed animate-spin" style="animation-duration: 6s;">sync</span>
+<span>Sync Telemetry</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Filters & Control Bar Panel (Integrated Island) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<!-- Timeframe Filters & Metric Measurement Segment -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Horizon Selection Pills -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-space-xs sm:gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Temporal Window:</span>
+<div class="inline-flex p-1 rounded-lg bg-surface-container gap-1 overflow-x-auto" id="timeframe-container">
+<button class="timeframe-btn px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all whitespace-nowrap" data-tf="24h">Last 24 Hours</button>
+<button class="timeframe-btn px-3 py-1.5 rounded font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-sm transition-all whitespace-nowrap" data-tf="7d">7 Days (Active)</button>
+<button class="timeframe-btn px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all whitespace-nowrap" data-tf="30d">30 Days</button>
+<button class="timeframe-btn px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all whitespace-nowrap" data-tf="std">Season to Date</button>
+<button class="timeframe-btn px-3 py-1.5 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-all whitespace-nowrap" data-tf="annual">Annual</button>
+</div>
+</div>
+<!-- Metric Mode Dual-Toggle -->
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Scale Representation:</span>
+<div class="relative inline-flex p-1 rounded-lg bg-surface-container text-label-md font-label-md">
+<button class="scale-toggle-btn px-3 py-1.5 rounded bg-primary text-on-primary font-semibold shadow-sm transition-all flex items-center gap-1.5" id="toggle-aqi">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span>AQI Sub-index</span>
+</button>
+<button class="scale-toggle-btn px-3 py-1.5 rounded text-on-surface-variant hover:text-primary transition-all flex items-center gap-1.5" id="toggle-conc">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span>Mass Conc. (µg/m³ &amp; ppm)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pollutant Filter Chips & Quick Preset Bar -->
+<div class="pt-space-sm flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs" id="pollutant-filters">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold mr-1">Active Vectors:</span>
+<label class="cursor-pointer select-none inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-primary font-medium">
+<input checked="" class="w-3.5 h-3.5 accent-primary rounded cursor-pointer" id="filter-all" type="checkbox"/>
+<span>All Pollutants</span>
+</label>
+<label class="cursor-pointer select-none inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-primary font-medium">
+<input checked="" class="pollutant-cb w-3.5 h-3.5 accent-primary rounded cursor-pointer" data-series="pm25" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>PM2.5 (Fine)</span>
+</label>
+<label class="cursor-pointer select-none inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-primary font-medium">
+<input checked="" class="pollutant-cb w-3.5 h-3.5 accent-primary rounded cursor-pointer" data-series="pm10" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span>PM10 (Coarse)</span>
+</label>
+<label class="cursor-pointer select-none inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-primary font-medium">
+<input checked="" class="pollutant-cb w-3.5 h-3.5 accent-primary rounded cursor-pointer" data-series="o3" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Ozone (O₃)</span>
+</label>
+<label class="cursor-pointer select-none inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-primary font-medium">
+<input checked="" class="pollutant-cb w-3.5 h-3.5 accent-primary rounded cursor-pointer" data-series="no2" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span>Nitrogen Dioxide (NO₂)</span>
+</label>
+<label class="cursor-pointer select-none inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors font-label-md text-label-md text-primary font-medium">
+<input checked="" class="pollutant-cb w-3.5 h-3.5 accent-primary rounded cursor-pointer" data-series="co" type="checkbox"/>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>Carbon Monoxide (CO)</span>
+</label>
+</div>
+<!-- Telemetry Status Quick Flag -->
+<div class="flex items-center gap-2 self-start md:self-auto font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span>Sampling Interval: 15-min EPA Standard Continuous</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Analytical Chart Grid (Bento Matrix) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+<!-- Chart 1: Multi-Pollutant Longitudinal Trend Line Chart (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-medium">Longitudinal Trend Inversion</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">7-Day Trajectory</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Synchronized rolling hourly averages plotted against atmospheric regulatory threshold baselines.</p>
+</div>
+<!-- Legend indicators -->
+<div class="flex items-center gap-3 font-label-sm text-label-sm">
+<div class="flex items-center gap-1"><span class="w-3 h-1 rounded-full bg-[#3c6377]"></span><span class="text-on-surface-variant">PM2.5</span></div>
+<div class="flex items-center gap-1"><span class="w-3 h-1 rounded-full bg-[#ffb4a3]"></span><span class="text-on-surface-variant">O₃ (Ozone)</span></div>
+<div class="flex items-center gap-1"><span class="w-3 h-1 rounded-full bg-[#4d6074]"></span><span class="text-on-surface-variant">NO₂</span></div>
+</div>
+</div>
+<!-- Interactive SVG Chart Area -->
+<div class="relative w-full h-80 select-none mt-space-sm" id="longitudinal-chart-wrapper">
+<!-- Background Threshold Gradients & Reference Lines -->
+<svg class="w-full h-full" id="trend-svg" preserveaspectratio="none" viewbox="0 0 800 320">
+<defs>
+<lineargradient id="moderateHaze" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ffdad2" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#ffdad2" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient id="cleanBaseline" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#c1e8ff" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#c1e8ff" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Guide Grids -->
+<line stroke="#d9e3f1" stroke-dasharray="4 4" stroke-width="1" x1="45" x2="780" y1="40" y2="40"></line>
+<text class="font-label-sm text-[10px]" fill="#74777d" text-anchor="end" x="36" y="44">150</text>
+<line stroke="#d9e3f1" stroke-dasharray="4 4" stroke-width="1" x1="45" x2="780" y1="110" y2="110"></line>
+<text class="font-label-sm text-[10px]" fill="#74777d" text-anchor="end" x="36" y="114">100</text>
+<line stroke="#d9e3f1" stroke-dasharray="4 4" stroke-width="1" x1="45" x2="780" y1="180" y2="180"></line>
+<text class="font-label-sm text-[10px]" fill="#74777d" text-anchor="end" x="36" y="184">50</text>
+<line stroke="#c4c7cd" stroke-width="1" x1="45" x2="780" y1="260" y2="260"></line>
+<text class="font-label-sm text-[10px]" fill="#74777d" text-anchor="end" x="36" y="264">0</text>
+<!-- Moderate / Unhealthy Reference Shading -->
+<rect fill="url(#moderateHaze)" height="70" width="735" x="45" y="40"></rect>
+<text class="font-label-sm text-[9px] font-semibold tracking-wider uppercase opacity-75" fill="#ba1a1a" text-anchor="end" x="770" y="55">Unhealthy Threshold (AQI &gt; 100)</text>
+<rect fill="url(#cleanBaseline)" height="80" width="735" x="45" y="180"></rect>
+<text class="font-label-sm text-[9px] font-semibold tracking-wider uppercase opacity-75" fill="#3c6377" text-anchor="end" x="770" y="248">Optimal Baseline (AQI &lt; 50)</text>
+<!-- Series 1: PM2.5 Path -->
+<path d="M 50 210 Q 120 190 170 160 T 290 140 T 410 110 T 530 85 T 650 145 T 770 170" fill="none" id="path-pm25" stroke="#3c6377" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Series 2: Ozone Path -->
+<path d="M 50 240 Q 130 250 180 200 T 310 170 T 420 70 T 540 95 T 660 190 T 770 215" fill="none" id="path-o3" stroke="#ffb4a3" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Series 3: NO2 Path -->
+<path d="M 50 180 Q 110 90 175 140 T 300 220 T 425 150 T 535 230 T 645 110 T 770 195" fill="none" id="path-no2" stroke="#4d6074" stroke-dasharray="3 2" stroke-linecap="round" stroke-width="2"></path>
+<!-- Interactive Cursor Guideline (Positioned via JS) -->
+<line id="hover-line" opacity="0.8" stroke="#0e2334" stroke-dasharray="2 2" stroke-width="1.5" x1="420" x2="420" y1="20" y2="260"></line>
+<circle cx="420" cy="70" fill="#5f2315" id="hover-pt-o3" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="420" cy="110" fill="#3c6377" id="hover-pt-pm" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<!-- X Axis Timestamps -->
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="50" y="285">Oct 18</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="170" y="285">Oct 19</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="290" y="285">Oct 20</text>
+<text class="font-label-sm text-[11px]" fill="#0e2334" font-weight="600" text-anchor="middle" x="410" y="285">Oct 21 (Surge)</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="530" y="285">Oct 22</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="650" y="285">Oct 23</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="770" y="285">Oct 24</text>
+</svg>
+<!-- Hover Floating Tooltip Simulation -->
+<div class="absolute top-6 left-1/2 -translate-x-1/2 pointer-events-none bg-surface-container-lowest/95 backdrop-blur-md px-3 py-2 rounded-lg shadow-xl text-left border-0" id="chart-tooltip">
+<div class="flex items-center justify-between gap-3 pb-1 border-b border-surface-container-highest">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Oct 21, 14:00 UTC</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[9px] font-bold">Midday Surge</span>
+</div>
+<div class="grid grid-cols-3 gap-3 pt-1.5">
+<div>
+<span class="font-label-sm text-[10px] text-on-surface-variant block">Ozone (O₃)</span>
+<span class="font-headline-sm text-sm font-semibold text-tertiary-container">124 AQI</span>
+</div>
+<div>
+<span class="font-label-sm text-[10px] text-on-surface-variant block">PM2.5</span>
+<span class="font-headline-sm text-sm font-semibold text-secondary">88 AQI</span>
+</div>
+<div>
+<span class="font-label-sm text-[10px] text-on-surface-variant block">Temp / RH</span>
+<span class="font-headline-sm text-sm font-semibold text-on-surface">26.4° / 38%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric Insights Footer Strip -->
+<div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between text-on-surface-variant font-body-sm text-body-sm gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+<span>Photochemical episode detected on Oct 21 driven by high solar insolation and stagnant boundary layer.</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">95% Epistemic Confidence Interval</span>
+</div>
+</div>
+<!-- Chart 2: Correlation Matrix Heatmap (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-medium">Pearson Correlation Matrix</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Atmospheric covariant collinearity (r).</p>
+</div>
+<button class="p-1 rounded bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Matrix Info">
+<span class="material-symbols-outlined text-sm">info</span>
+</button>
+</div>
+<!-- Matrix Grid Container -->
+<div class="w-full flex-1 flex flex-col justify-center my-auto py-2">
+<div class="grid grid-cols-6 gap-1.5 text-center items-center">
+<!-- Col Headers -->
+<div></div>
+<div class="font-label-sm text-label-sm font-semibold text-on-surface-variant">PM2.5</div>
+<div class="font-label-sm text-label-sm font-semibold text-on-surface-variant">PM10</div>
+<div class="font-label-sm text-label-sm font-semibold text-on-surface-variant">O₃</div>
+<div class="font-label-sm text-label-sm font-semibold text-on-surface-variant">NO₂</div>
+<div class="font-label-sm text-label-sm font-semibold text-on-surface-variant">Temp</div>
+<!-- Row 1: PM2.5 -->
+<div class="font-label-sm text-label-sm font-semibold text-right pr-1 text-on-surface-variant">PM2.5</div>
+<div class="p-2 rounded bg-primary text-on-primary font-label-md text-xs font-semibold">1.00</div>
+<div class="p-2 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-xs font-semibold" title="Strong positive association between particulate fractions">+0.84</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.22</div>
+<div class="p-2 rounded bg-secondary-fixed-dim text-on-secondary-fixed font-label-md text-xs font-semibold">+0.68</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.34</div>
+<!-- Row 2: PM10 -->
+<div class="font-label-sm text-label-sm font-semibold text-right pr-1 text-on-surface-variant">PM10</div>
+<div class="p-2 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-md text-xs font-semibold">+0.84</div>
+<div class="p-2 rounded bg-primary text-on-primary font-label-md text-xs font-semibold">1.00</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.14</div>
+<div class="p-2 rounded bg-secondary-fixed-dim/80 text-on-secondary-fixed font-label-md text-xs font-semibold">+0.57</div>
+<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-label-md text-xs">-0.08</div>
+<!-- Row 3: Ozone -->
+<div class="font-label-sm text-label-sm font-semibold text-right pr-1 text-on-surface-variant">O₃</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.22</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.14</div>
+<div class="p-2 rounded bg-primary text-on-primary font-label-md text-xs font-semibold">1.00</div>
+<div class="p-2 rounded bg-tertiary-fixed-dim/70 text-on-tertiary-fixed-variant font-label-md text-xs font-semibold" title="Negative titration titration with NO">-0.48</div>
+<div class="p-2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-xs font-semibold" title="Strong positive solar thermal generation">+0.76</div>
+<!-- Row 4: NO2 -->
+<div class="font-label-sm text-label-sm font-semibold text-right pr-1 text-on-surface-variant">NO₂</div>
+<div class="p-2 rounded bg-secondary-fixed-dim text-on-secondary-fixed font-label-md text-xs font-semibold">+0.68</div>
+<div class="p-2 rounded bg-secondary-fixed-dim/80 text-on-secondary-fixed font-label-md text-xs font-semibold">+0.57</div>
+<div class="p-2 rounded bg-tertiary-fixed-dim/70 text-on-tertiary-fixed-variant font-label-md text-xs font-semibold">-0.48</div>
+<div class="p-2 rounded bg-primary text-on-primary font-label-md text-xs font-semibold">1.00</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.39</div>
+<!-- Row 5: Temp -->
+<div class="font-label-sm text-label-sm font-semibold text-right pr-1 text-on-surface-variant">Temp</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.34</div>
+<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-label-md text-xs">-0.08</div>
+<div class="p-2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-xs font-semibold">+0.76</div>
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-md text-xs">-0.39</div>
+<div class="p-2 rounded bg-primary text-on-primary font-label-md text-xs font-semibold">1.00</div>
+</div>
+</div>
+<!-- Heatmap Color Spectrum Guide -->
+<div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-tertiary-fixed-dim"></span>
+<span>Inverse (-0.5)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-container"></span>
+<span>Neutral (0.0)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-secondary-fixed"></span>
+<span>Positive (+0.8)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Chart Row 2: Diurnal Cycle & Frequency Distribution (Split 7 / 5) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mb-space-xl">
+<!-- Chart 3: Diurnal 24-Hour Cycle Analysis (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-medium">Diurnal 24-Hour Concentration Cycle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Composite hourly cycle showcasing morning vehicular NO₂ rush surges vs solar peak Ozone.</p>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Hourly Mean Climatology</span>
+</div>
+</div>
+<!-- Diurnal Chart SVG -->
+<div class="relative w-full h-72 select-none mt-space-sm">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 700 280">
+<!-- Vertical Night/Day Atmospheric Bands -->
+<!-- Night 00-06 -->
+<rect fill="#edf4ff" height="210" opacity="0.6" width="150" x="50" y="20"></rect>
+<!-- Day 06-18 -->
+<rect fill="#ffffff" height="210" opacity="0.4" width="320" x="200" y="20"></rect>
+<!-- Evening 18-24 -->
+<rect fill="#edf4ff" height="210" opacity="0.6" width="140" x="520" y="20"></rect>
+<!-- Gridlines -->
+<line stroke="#d9e3f1" stroke-dasharray="3 3" x1="50" x2="660" y1="80" y2="80"></line>
+<line stroke="#d9e3f1" stroke-dasharray="3 3" x1="50" x2="660" y1="150" y2="150"></line>
+<line stroke="#c4c7cd" x1="50" x2="660" y1="230" y2="230"></line>
+<!-- Y Axis Labels -->
+<text class="font-label-sm text-[10px]" fill="#74777d" text-anchor="end" x="42" y="84">High</text>
+<text class="font-label-sm text-[10px]" fill="#74777d" text-anchor="end" x="42" y="154">Mid</text>
+<text class="font-label-sm text-[10px]" fill="#74777d" text-anchor="end" x="42" y="234">Zero</text>
+<!-- NO2 Curve (Morning Peak 07:00 - 09:00, Evening Peak 18:00 - 20:00) -->
+<!-- Color: Slate Blue #4d6074 -->
+<path d="M 50 190 Q 120 185 180 140 T 230 65 T 290 140 T 380 180 T 480 160 T 540 85 T 600 130 T 660 180" fill="none" stroke="#4d6074" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- O3 Ozone Curve (Troughs at night, peaks between 13:00 - 15:00) -->
+<!-- Color: Muted Coral #df8873 -->
+<path d="M 50 215 Q 120 220 190 205 T 280 140 T 380 48 T 460 70 T 530 150 T 600 200 T 660 215" fill="none" stroke="#df8873" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Annotations -->
+<!-- Morning Peak Marker -->
+<circle cx="230" cy="65" fill="#25384a" r="4"></circle>
+<line stroke="#25384a" stroke-width="1" x1="230" x2="230" y1="65" y2="40"></line>
+<text class="font-label-sm text-[10px] font-bold" fill="#0e2334" text-anchor="middle" x="230" y="34">08:00 NO₂ Rush Peak</text>
+<!-- Photochemical Solar Peak Marker -->
+<circle cx="380" cy="48" fill="#5f2315" r="4"></circle>
+<line stroke="#5f2315" stroke-width="1" x1="380" x2="380" y1="48" y2="25"></line>
+<text class="font-label-sm text-[10px] font-bold" fill="#5f2315" text-anchor="middle" x="380" y="19">14:00 Photochemical O₃ Surge</text>
+<!-- X Axis Hours -->
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="50" y="255">00:00</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="150" y="255">04:00</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="250" y="255">08:00</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="350" y="255">12:00</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="450" y="255">16:00</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="550" y="255">20:00</text>
+<text class="font-label-sm text-[11px]" fill="#74777d" text-anchor="middle" x="660" y="255">24:00</text>
+</svg>
+</div>
+<!-- Bottom Legend -->
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-1 rounded-full bg-[#4d6074]"></span>
+<span>NO₂ Primary Combustion</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-1 rounded-full bg-[#df8873]"></span>
+<span>Ozone Secondary Formation</span>
+</div>
+</div>
+<span class="text-on-surface-variant font-medium">Boundary Layer Height: 450m → 1850m (Diurnal Lift)</span>
+</div>
+</div>
+<!-- Chart 4: AQI Category Frequency Distribution (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-medium">AQI Frequency Distribution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Classified days across 90-day seasonal baseline.</p>
+</div>
+<span class="font-label-sm text-label-sm font-semibold px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">N = 90 Days</span>
+</div>
+<!-- Radial Donut & Metric Distribution Split -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md items-center my-auto py-2">
+<!-- Visual Donut (Inline SVG) -->
+<div class="relative flex items-center justify-center">
+<svg class="w-44 h-44 -rotate-90" viewbox="0 0 160 160">
+<!-- Background Circle -->
+<circle cx="80" cy="80" fill="none" r="62" stroke="#edf4ff" stroke-width="18"></circle>
+<!-- Good Segment (58%): Dasharray ~ 226 of 389.5 -->
+<circle cx="80" cy="80" fill="none" r="62" stroke="#3c6377" stroke-dasharray="226 390" stroke-dashoffset="0" stroke-width="18"></circle>
+<!-- Moderate Segment (28%): Dasharray ~ 109 -->
+<circle cx="80" cy="80" fill="none" r="62" stroke="#c1e8ff" stroke-dasharray="109 390" stroke-dashoffset="-226" stroke-width="18"></circle>
+<!-- Unhealthy Segment (14%): Dasharray ~ 54 -->
+<circle cx="80" cy="80" fill="none" r="62" stroke="#ffb4a3" stroke-dasharray="54 390" stroke-dashoffset="-335" stroke-width="18"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-metric-xl text-3xl font-semibold text-primary">58%</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-on-surface-variant">Clean Days</span>
+</div>
+</div>
+<!-- Distribution Breakdown Percentages -->
+<div class="flex flex-col gap-2.5">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                  Good (0–50 AQI)
+                </span>
+<span class="font-label-md text-label-md font-bold text-primary">52 Days</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 58%;"></div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+                  Moderate (51–100)
+                </span>
+<span class="font-label-md text-label-md font-bold text-primary">25 Days</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded-full" style="width: 28%;"></div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+                  Unhealthy (&gt;100)
+                </span>
+<span class="font-label-md text-label-md font-bold text-tertiary-container">13 Days</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 14%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Target Attainment: 86% Non-Exceedance</span>
+<span class="text-secondary font-semibold">Standard: NAAQS Level 1</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Statistical Summary Table (Parametric Distribution) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-medium">Statistical Distribution Summary</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Validated Dataset #4092</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Descriptive parametric and non-parametric bounds across active sensor monitoring instruments.</p>
+</div>
+<!-- Table Quick Actions -->
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> 99.4% Data Completeness</span>
+<span class="mx-1">•</span>
+<span>Zero Calibration Drift: &lt;0.02%</span>
+</div>
+</div>
+<!-- Responsive Table View -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg font-semibold">Pollutant Vector</th>
+<th class="py-3 px-4 font-semibold">Instrument Unit</th>
+<th class="py-3 px-4 font-semibold text-right">25th Percentile</th>
+<th class="py-3 px-4 font-semibold text-right">Median (p50)</th>
+<th class="py-3 px-4 font-semibold text-right">Arithmetic Mean</th>
+<th class="py-3 px-4 font-semibold text-right">75th Percentile</th>
+<th class="py-3 px-4 font-semibold text-right">Max Recorded</th>
+<th class="py-3 px-4 rounded-r-lg font-semibold text-right">Std Dev (σ)</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm">
+<!-- Row: PM2.5 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>PM2.5 (Fine Particulates)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">µg/m³</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">6.8</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">12.4</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">14.1</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">19.2</td>
+<td class="py-3.5 px-4 text-right font-bold text-tertiary-container">64.8</td>
+<td class="py-3.5 px-4 text-right text-on-surface-variant">±7.9</td>
+</tr>
+<!-- Row: PM10 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<span>PM10 (Coarse Inhalable)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">µg/m³</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">14.2</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">22.8</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">26.3</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">34.9</td>
+<td class="py-3.5 px-4 text-right font-bold text-tertiary-container">112.0</td>
+<td class="py-3.5 px-4 text-right text-on-surface-variant">±14.5</td>
+</tr>
+<!-- Row: Ozone -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Ozone (O₃ Photochemical)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">ppb</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">22.0</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">38.5</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">41.2</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">56.0</td>
+<td class="py-3.5 px-4 text-right font-bold text-tertiary-container">98.4</td>
+<td class="py-3.5 px-4 text-right text-on-surface-variant">±18.2</td>
+</tr>
+<!-- Row: NO2 -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint"></span>
+<span>Nitrogen Dioxide (NO₂)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">ppb</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">8.4</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">17.1</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">19.8</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">28.5</td>
+<td class="py-3.5 px-4 text-right font-bold text-tertiary-container">71.3</td>
+<td class="py-3.5 px-4 text-right text-on-surface-variant">±11.4</td>
+</tr>
+<!-- Row: CO -->
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-primary">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span>Carbon Monoxide (CO)</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant">ppm</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">0.24</td>
+<td class="py-3.5 px-4 text-right font-semibold text-primary">0.42</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">0.48</td>
+<td class="py-3.5 px-4 text-right font-medium text-on-surface">0.65</td>
+<td class="py-3.5 px-4 text-right font-bold text-tertiary-container">2.14</td>
+<td class="py-3.5 px-4 text-right text-on-surface-variant">±0.29</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Action Footer with Direct CSV Export -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-low/60 p-space-sm rounded-lg">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">fact_check</span>
+<span>Parametric calibration curve verified by Atmospheric Metrology Engine v2.1.</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:text-primary font-label-md text-label-md transition-colors flex items-center gap-1.5" id="btn-copy-summary">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span>Copy Table Values</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm" id="btn-export-table-csv">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">file_download</span>
+<span>Export Table (.CSV)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Atmospheric Advisory Toast (Interactive Placeholder) -->
+<div class="fixed bottom-6 right-6 z-40 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-primary text-on-primary px-4 py-3 rounded-lg shadow-xl flex items-center gap-3 font-label-md text-label-md" id="status-toast">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">check_circle</span>
+<span id="toast-message">Cleaned CSV generated and exported successfully.</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Interactive Timeframe Filter Buttons
+    const timeframeBtns = document.querySelectorAll('.timeframe-btn');
+    timeframeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        timeframeBtns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+          b.classList.add('text-on-surface-variant');
+        });
+        btn.classList.remove('text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+        showToast('Temporal baseline set to ' + btn.textContent.trim());
+      });
+    });
+
+    // Metric Toggle: AQI Sub-index vs Mass Concentration
+    const toggleAqi = document.getElementById('toggle-aqi');
+    const toggleConc = document.getElementById('toggle-conc');
+
+    function setActiveToggle(active, inactive) {
+      active.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+      active.classList.remove('text-on-surface-variant');
+      inactive.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+      inactive.classList.add('text-on-surface-variant');
+    }
+
+    if(toggleAqi && toggleConc) {
+      toggleAqi.addEventListener('click', () => {
+        setActiveToggle(toggleAqi, toggleConc);
+        showToast('Scale representation toggled to: Standardized AQI Sub-index');
+      });
+      toggleConc.addEventListener('click', () => {
+        setActiveToggle(toggleConc, toggleAqi);
+        showToast('Scale representation toggled to: Mass Concentration (µg/m³ & ppm)');
+      });
+    }
+
+    // Pollutant Checkbox Filters
+    const filterAll = document.getElementById('filter-all');
+    const pollutantCheckboxes = document.querySelectorAll('.pollutant-cb');
+
+    if(filterAll) {
+      filterAll.addEventListener('change', (e) => {
+        pollutantCheckboxes.forEach(cb => {
+          cb.checked = e.target.checked;
+        });
+        showToast(e.target.checked ? 'All 5 pollutant vectors enabled' : 'All pollutant vectors hidden');
+      });
+    }
+
+    pollutantCheckboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const allChecked = Array.from(pollutantCheckboxes).every(c => c.checked);
+        if(filterAll) filterAll.checked = allChecked;
+        showToast('Updated active vector layer: ' + cb.getAttribute('data-series').toUpperCase());
+      });
+    });
+
+    // Chart Interactive Hover Tracker
+    const trendWrapper = document.getElementById('longitudinal-chart-wrapper');
+    const hoverLine = document.getElementById('hover-line');
+    const hoverO3 = document.getElementById('hover-pt-o3');
+    const hoverPM = document.getElementById('hover-pt-pm');
+    const tooltip = document.getElementById('chart-tooltip');
+
+    if(trendWrapper && hoverLine && tooltip) {
+      trendWrapper.addEventListener('mousemove', (e) => {
+        const rect = trendWrapper.getBoundingClientRect();
+        const relX = e.clientX - rect.left;
+        const boundedX = Math.max(50, Math.min(rect.width - 30, relX));
+        const svgWidth = 800;
+        const scale = svgWidth / rect.width;
+        const svgX = boundedX * scale;
+
+        hoverLine.setAttribute('x1', svgX);
+        hoverLine.setAttribute('x2', svgX);
+        
+        // Approximate synthetic Y on path for dynamic indicator
+        const synthYO3 = 140 + Math.sin(svgX * 0.02) * 60;
+        const synthYPM = 150 + Math.cos(svgX * 0.015) * 45;
+        if(hoverO3) {
+          hoverO3.setAttribute('cx', svgX);
+          hoverO3.setAttribute('cy', synthYO3);
+        }
+        if(hoverPM) {
+          hoverPM.setAttribute('cx', svgX);
+          hoverPM.setAttribute('cy', synthYPM);
+        }
+
+        // Float tooltip near cursor
+        tooltip.style.left = boundedX + 'px';
+      });
+    }
+
+    // Toast Notification Utility
+    const toast = document.getElementById('status-toast');
+    const toastMsg = document.getElementById('toast-message');
+    let toastTimeout;
+
+    function showToast(message) {
+      if(!toast || !toastMsg) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3200);
+    }
+
+    // Export Actions Handlers
+    const btnCsv = document.getElementById('btn-export-csv');
+    const btnTableCsv = document.getElementById('btn-export-table-csv');
+    const btnSvg = document.getElementById('btn-export-svg');
+    const btnRecal = document.getElementById('btn-recalibrate');
+    const btnCopy = document.getElementById('btn-copy-summary');
+
+    if(btnCsv) btnCsv.addEventListener('click', () => showToast('Compiling Cleaned CSV: station_alpine_04_telemetry.csv'));
+    if(btnTableCsv) btnTableCsv.addEventListener('click', () => showToast('Exporting parametric statistics summary table as CSV.'));
+    if(btnSvg) btnSvg.addEventListener('click', () => showToast('Vector Assets exported: multi_pollutant_trend.svg'));
+    if(btnRecal) btnRecal.addEventListener('click', () => showToast('Live atmospheric stream synced. 1,428 stations verified.'));
+    if(btnCopy) btnCopy.addEventListener('click', () => showToast('Table summary values copied to system clipboard.'));
+  })();
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_12px_rgba(0,0,0,0.02)] mt-space-xl"><div class="w-full px-margin-mobile md:px-margin lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop"><div class="lg:col-span-4 flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-label-md text-secondary-fixed">airwave</span></div><span class="font-headline-sm text-headline-sm font-semibold text-primary">AirSight AI</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">High-fidelity atmospheric forecasting engine synthesizing tropospheric chemistry, multimodal particulate telemetry, and microclimatic dynamics.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Engine: RF-Ensemble &amp; GBDT v2.1</span><span class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Inference Latency: 12ms</span></div></div><div class="lg:col-span-3 flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Scientific Citations &amp; Feeds</span><ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">menu_book</span><span>Copernicus CAMS Reanalysis Troposphere</span></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">public</span><span>NOAA Global Monitoring Laboratory Telemetry</span></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">dataset</span><span>EPA AirNow Real-Time Micro-Particulate Grid</span></li><li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-secondary">satellite_alt</span><span>Sentinel-5P TROPOMI Optical Density</span></li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Model Infrastructure</span><ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><span class="font-medium text-on-surface">Architecture:</span> Multi-Horizon Gradient Boosted AQI</li><li><span class="font-medium text-on-surface">Particulate Species:</span> PM2.5, PM10, O₃, NO₂, SO₂, CO</li><li><span class="font-medium text-on-surface">Confidence Interval:</span> 95% Bayesian Epistemic Band</li><li><span class="font-medium text-on-surface">Spatial Resolution:</span> 1.2km² Hexagonal Mesh</li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Compliance &amp; API</span><ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">REST Telemetry v2.1</a></li><li><a class="hover:text-primary transition-colors" href="#">WebSocket Stream</a></li><li><a class="hover:text-primary transition-colors" href="#">GeoTIFF Exporter</a></li><li><a class="hover:text-primary transition-colors" href="#">Calibration Protocols</a></li></ul></div></div><div class="mt-space-lg pt-space-md border-t border-surface-container-highest flex flex-col lg:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-start gap-2 max-w-3xl"><span class="material-symbols-outlined text-tertiary-fixed-variant text-base shrink-0 mt-0.5">health_and_safety</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed"><span class="font-medium text-on-surface">Health &amp; Research Advisory:</span> AirSight AI forecasts are intended for atmospheric research, municipal spatial planning, and observational risk mitigation. Individuals with respiratory conditions should cross-verify with official municipal emergency advisories during ambient particulate surge events.</p></div><div class="flex items-center gap-space-md shrink-0 font-label-sm text-label-sm"><span class="text-on-surface-variant">© 2025 AirSight Atmospheric Systems. All rights reserved.</span></div></div></div></footer></body></html>
